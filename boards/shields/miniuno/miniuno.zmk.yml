@@ -1,8 +1,0 @@
-file_format: "1"
-id: miniuno
-name: miniuno
-type: shield
-url: https://github.com/angreh
-requires: [seeeduino_xiao_ble]
-features:
-  - keys
