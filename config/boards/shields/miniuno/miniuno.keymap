@@ -6,7 +6,7 @@
     tap_dance_pairing: behavior_tap_dance {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
-      taps = <1>, <2>;  // 1 tap = regular action, 2 taps = pairing mode
+      tapping-term-ms = <200>;
       bindings = <&kp A>, <&kp B>;
     };
   };
