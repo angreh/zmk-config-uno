@@ -2,12 +2,21 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+  behaviors {
+    tap_dance_pairing: behavior_tap_dance {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      taps = <1>, <2>;  // 1 tap = regular action, 2 taps = pairing mode
+      bindings = <&kb A>, <&kb B>;
+    };
+  };
+
   keymap {
     compatible = "zmk,keymap";
 
     default_layer {
       bindings = <
-        &kp A
+        &tap_dance_pairing
       >;
     };
   };
